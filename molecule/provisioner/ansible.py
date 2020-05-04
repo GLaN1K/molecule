@@ -419,9 +419,6 @@ class Ansible(base.Base):
                                 self._config.scenario.ephemeral_directory, 'roles'
                             )
                         ),
-                        util.abs_path(
-                            os.path.join(self._config.project_directory, os.path.pardir)
-                        ),
                     ]
                 ),
                 'ANSIBLE_LIBRARY': ':'.join(
